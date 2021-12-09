@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION DESIGN SHOP</title> 
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/f615d2e945.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f615d2e945.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="/img/waikiki.jpg"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+        
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"  ></i>
+    </section>
+    
+   
+ 
+    <!------For enquiry call-->
+    <section class="CALL">
+        <h1>For Any enquiry, call our custormer care</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+          
+    </section>
+    <section class="FOOTER">
+        <h4>ABOUT</h4>
+        <p>We are farnks shopping mall mfor designs <br> and everything that comes wuto  design</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i>by FRANK</p>
+    </section>
+ <!-----JS for Toggcle Menu------>
+     <script>
+         var navLinks = document.getElementById("navLinks");
+         function showMenu(){
+             navLinks.style.right ="0"
+         } 
+         function hideMenu(){
+             navLinks.style.right ="-200px"
+    </script>
+</body>
+</html>

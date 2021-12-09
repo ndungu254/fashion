@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-emphasis: none;
+}
+.navbar{
+    height: 100px;
+    font-size: 22px;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/waikiki.jpg); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box{ 
+    width: 10%;
+    color:#fff;
+    display: flex;
+    margin-left: 80%;
+    padding-top: 0;
+}
+.text-box h1{
+    font-size: 62px;
+    display: flex;
+    position: relative;
+
+
+} .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(199, 179, 179);
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+} 
+.hero-btn:hover{
+    border: 1px solid #383535;
+    background: white;
+    transition: 1s;
+}
+
+/*-------arrivals-----*/
+.arrivals {
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+
+} 
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: inline;
+}
+.item{
+    width: 100%;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.item img{
+    width: 100%;
+    object-fit: cover;
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.item:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    
+    background: #e7e3e3;
+
+}
+
+.arrival-col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8em;
+
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+} 
+/*----Our countrywide shops---*/
+
+.countrywide {
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+ 
+.countrywide-col{
+    width: 100%;
+    flex-basis: 31%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8em;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  
+  
+}
+
+.countrywide-col img{
+    width: 70%;
+}
+.layer{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+} .layer :hover{
+    background: white;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 00.5s;
+
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*-----types------*/
+.types{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+
+}
+.types-col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8em;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.types-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+.types-col p{
+    padding: 0;
+}
+.types-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/*------TESTIMONIALS------*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.testimonials-col{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 0.8em;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+   
+.testimonials-col img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.testimonials-col p{
+    padding: 0;
+}
+.testimonials-col h3{
+    margin-top: 16px;
+    margin-bottom:15px ;
+    text-align: left;
+} 
+.testimonials-col .fa{
+    color: #f44336;
+}
+@media (max-width: 700px){
+    .testimonials-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    
+}
+.call{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Downloads/orsrc58333.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.call h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media (max-width: 700px) {
+    .call h1{
+        font-size: 24px;
+    }
+
+    
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{ 
+    margin-bottom: 25px;
+    margin-top: 2 0px;  
+    font-weight: 600;
+    text-align: center;
+}
+.icons.fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+.logo{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
